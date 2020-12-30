@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8s-live-reload-configmap
+data:
+  application.yaml: |-
+    bean:
+      testvalue: oldvalue

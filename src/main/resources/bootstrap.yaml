@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: k8s-live-reload-example
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        mode: event
+      config:
+        sources:
+          - name: k8s-live-reload-configmap
+          
+management:
+  endpoints:
+    enabled-by-default: false #actuators endpoints disabled in order to show it is not required to reload config
